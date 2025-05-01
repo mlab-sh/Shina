@@ -1,0 +1,8 @@
+- name: Fox detector
+  description: Detect fox in the logs
+  metadata: 
+  rules: path == "/vulns" || (user-agent CONTAINS "fox" && method == "GET")
+  severity: high
+  tags:
+    - fox
+    - vulns
